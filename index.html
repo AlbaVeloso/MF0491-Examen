@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agencia actores</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>Agencia actoral</header>
+    <p>Somos un equipo de profesionales dedicados a la gestión y desarrollo de talentos actorales, comprometidos con la creación de oportunidades únicas en el mundo del entretenimiento. Nuestro enfoque es brindar a cada actor las herramientas necesarias para destacar.</p>
+    
+    <ul>
+        <li>Teatro</li>
+        <li>Cine</li>
+        <li>Series</li>
+        <li>Publicidad</li>
+        <li>Realities</li>
+    </ul>
+    
+    <button class="mensaje" onclick="mostrarMensaje()">Descúbrenos</button>
+
+    <form id="actorForm">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required placeholder="Nombre"><br>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="text" name="correo" id="correo" required placeholder="Correo electrónico"><br>
+
+        <button type="button" onclick="mostrarDatos(event)">Guardar</button>
+    </form>
+
+    <div class="mensaje_guardado" style="display: none;">
+        <strong>¡Datos guardados con éxito!</strong>
+    </div>
+
+    <div class="actor_list">
+    
+    </div>
+
+    <button class="actores" onclick="toggleActorList()">Nuestros actores</button>
+
+    <section>
+        <h2>Algunos países en los que estamos:</h2>
+        <ul id="listaPaises">
+            
+        </ul>
+    </section>
+
+</body>
+<footer><p>&copy; 2025 Agencia Actoral. Todos los derechos reservados.</p></footer>
+</html>
+
+
+
+
